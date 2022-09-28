@@ -1,0 +1,243 @@
+body {
+    font-family: poppins;
+    color: white;
+    background-image: linear-gradient(to bottom right, navy, rgb(4, 4, 107), rgb(175, 155, 42), rgb(4, 4, 107), rgb(1, 1, 48), black);
+}
+
+body p {
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 3px;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+    font-weight: 500;
+    color: rgb(190, 190, 190);
+    padding: 5px;
+}
+
+a:active {
+    color: gold;
+}
+
+a:visited {
+    color: goldenrod;
+}
+
+.whiteone {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.white {
+    padding: 15px 10px;
+    margin: 20px;
+}
+
+.three {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-bottom: 1px grey solid;
+    padding-bottom: 0.5in;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+.g1 {
+    filter: grayscale(67%);
+    width: 100%;
+    filter: brightness(40%);
+}
+
+.eight {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 1px grey solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.one {
+    font-size: 30PX;
+    font-weight: 620;
+}
+
+.one span {
+    color: rgb(190, 190, 190);
+}
+
+.two {
+    display: flex;
+}
+
+.two p {
+    align-self: flex-end;
+}
+
+.four p {
+    font-size: 30PX;
+    font-weight: 620;
+}
+
+.fiveone {
+    font-size: larger;
+}
+
+.five2 {
+    font-size: 11px;
+}
+
+.vine {
+    max-height: 1in;
+    max-width: 1in;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.six {
+    display: flex;
+}
+
+.six span {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.seven span {
+    font-size: 30PX;
+    font-weight: 620;
+}
+
+.eight span {
+    font-weight: 600;
+    font-size: 70px;
+    align-self: center;
+}
+
+.nine {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(1, 1, 54);
+    margin-bottom: 0%;
+}
+
+.nine h2 {
+    border-bottom: 1px gray solid;
+    text-align: left;
+    font-size: 30PX;
+    font-weight: 620;
+    padding-left: 110px;
+}
+
+.nine div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+figure {
+    size: inherit;
+}
+
+.team {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.ten {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(1, 1, 54);
+    margin-top: 0%;
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ten h2 {
+    align-self: left;
+    text-align: left;
+    font-size: 30PX;
+    font-weight: 620;
+    padding-left: 110px;
+}
+
+.ten p {
+    padding-right: 110px;
+}
+
+.eleven {
+    background-color: #003F51;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 80px;
+}
+
+.eleven2 {
+    padding-right: 30px
+}
+
+.eleven1 {
+    margin-left: px;
+    padding-left: 110px;
+}
+
+.eleven1 h3 {
+    align-self: left;
+    text-align: left;
+    font-size: 30PX;
+    font-weight: 620;
+}
+
+.button {
+    padding: 15px;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 5%;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #010101;
+    clear: both;
+    padding: 30px;
+    width: inherit;
+    left: 0;
+    right: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}

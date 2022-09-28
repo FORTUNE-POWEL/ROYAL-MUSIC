@@ -1,5 +1,5 @@
 body {
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     color: white;
     background-image: linear-gradient(to bottom right, navy, rgb(4, 4, 107), rgb(175, 155, 42), rgb(4, 4, 107), rgb(1, 1, 48), black);
 }

@@ -4,6 +4,15 @@ body {
     background-image: linear-gradient(to bottom right, navy, rgb(4, 4, 107), rgb(175, 155, 42), rgb(4, 4, 107), rgb(1, 1, 48), black);
 }
 
+.rgma1 {
+    height: inherit;
+    max-width: 100%;
+}
+
+.rgma {
+    text-align: center;
+}
+
 body p {
     font-size: 14px;
 }
@@ -159,6 +168,12 @@ figure {
     size: inherit;
 }
 
+figure:hover {
+    border-bottom: 1px groove linen;
+    padding: 2px;
+    border-radius: 5%;
+}
+
 .team {
     width: 250px;
     height: 250px;
@@ -240,4 +255,64 @@ footer {
 .logo {
     height: 60px;
     width: 60px;
+}
+
+.menu {
+    position: relative;
+    display: none;
+}
+
+.menu span {
+    width: 0px;
+}
+
+.menu-content {
+    right: 0;
+    display: none;
+    background-color: #b0b0b0;
+    border-radius: 7%;
+    position: absolute;
+    max-width: 100%;
+}
+
+.menu-content a {
+    display: block;
+    text-decoration: none;
+    padding: 7px;
+    color: #010101;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.menu-content a:hover {
+    background-color: gray;
+}
+
+.menu:hover .menu-content {
+    display: block;
+}
+
+@media screen and (max-width:980px) {
+    body {
+        background-color: pink;
+    }
+    .one,
+    .four p,
+    .fiveone,
+    .seven p span {
+        font-size: 20px;
+    }
+    .h2,
+    .h3 {
+        display: none;
+    }
+    .two {
+        font-size: 30px;
+    }
+    .five2 {
+        font-size: 9px;
+    }
+    .menu {
+        display: inline-block;
+    }
 }

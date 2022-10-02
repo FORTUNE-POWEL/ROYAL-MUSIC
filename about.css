@@ -308,6 +308,17 @@ footer {
     min-width: 300px;
 }
 
+.menu-content .login {
+    background-color: green;
+    color: #ffffff;
+}
+
+.menu-content .for-free {
+    background-color: linen;
+    color: rgb(3, 63, 3);
+    border-radius: 7%;
+}
+
 .menu-content a {
     display: block;
     text-decoration: none;

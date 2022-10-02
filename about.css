@@ -266,8 +266,8 @@ footer {
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
 }
 
 .h3 ul li {
@@ -305,7 +305,7 @@ footer {
     background-color: #b0b0b0;
     border-radius: 7%;
     position: absolute;
-    min-width: 200px;
+    min-width: 300px;
 }
 
 .menu-content a {

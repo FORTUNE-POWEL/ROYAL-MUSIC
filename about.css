@@ -14,12 +14,17 @@ body {
 }
 
 body p {
-    font-size: 14px;
+    font-size: 1.59em;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+}
+
+.h2,
+.h3 {
+    align-self: center;
 }
 
 nav ul li {
@@ -30,6 +35,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
+    font-size: 20px;
 }
 
 a:link {
@@ -82,11 +88,12 @@ a:visited {
     grid-column-end: 3;
     border-top: 1px grey solid;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 .one {
-    font-size: 30PX;
+    font-size: 2.78em;
     font-weight: 620;
 }
 
@@ -103,16 +110,16 @@ a:visited {
 }
 
 .four p {
-    font-size: 30PX;
+    font-size: 2.78em;
     font-weight: 620;
 }
 
 .fiveone {
-    font-size: larger;
+    font-size: 2em;
 }
 
 .five2 {
-    font-size: 11px;
+    font-size: 1.1em;
 }
 
 .vine {
@@ -132,7 +139,7 @@ a:visited {
 }
 
 .seven span {
-    font-size: 30PX;
+    font-size: 1.8em;
     font-weight: 620;
 }
 
@@ -152,7 +159,7 @@ a:visited {
 .nine h2 {
     border-bottom: 1px gray solid;
     text-align: left;
-    font-size: 30PX;
+    font-size: 2.78em;
     font-weight: 620;
     padding-left: 110px;
 }
@@ -165,7 +172,7 @@ a:visited {
 }
 
 figure {
-    size: inherit;
+    width: 400px;
 }
 
 figure:hover {
@@ -175,8 +182,8 @@ figure:hover {
 }
 
 .team {
-    width: 250px;
-    height: 250px;
+    min-width: 300px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -193,7 +200,7 @@ figure:hover {
 .ten h2 {
     align-self: left;
     text-align: left;
-    font-size: 30PX;
+    font-size: 2.78em;
     font-weight: 620;
     padding-left: 110px;
 }
@@ -218,6 +225,12 @@ figure:hover {
     padding-right: 30px
 }
 
+.eleven3 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 .eleven1 {
     margin-left: px;
     padding-left: 110px;
@@ -226,7 +239,7 @@ figure:hover {
 .eleven1 h3 {
     align-self: left;
     text-align: left;
-    font-size: 30PX;
+    font-size: 2.78em;
     font-weight: 620;
 }
 
@@ -253,11 +266,31 @@ footer {
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 150px;
+    width: 150px;
+}
+
+.h3 ul li {
+    padding: 5px;
+}
+
+.h3 ul li .login {
+    background-color: green;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15%;
+}
+
+.h3 ul li .for-free {
+    font-weight: 600;
+    background-color: linen;
+    color: rgb(3, 63, 3);
+    padding: 10px;
+    border-radius: 10%;
 }
 
 .menu {
+    align-self: center;
     position: relative;
     display: none;
 }
@@ -272,7 +305,7 @@ footer {
     background-color: #b0b0b0;
     border-radius: 7%;
     position: absolute;
-    max-width: 100%;
+    min-width: 200px;
 }
 
 .menu-content a {
@@ -292,9 +325,31 @@ footer {
     display: block;
 }
 
-@media screen and (max-width:980px) {
-    body {
-        background-color: pink;
+.icon {
+    height: 20px;
+    width: 20px;
+}
+
+.alt-one,
+.alt-two {
+    display: none;
+}
+
+.alt-two {
+    text-indent: 30px;
+}
+
+.alt-fiveone {
+    display: none;
+}
+
+.alt-five2 {
+    display: none;
+}
+
+@media screen and (max-width:1300px) and (min-width:981px) {
+    body p {
+        font-size: 20px;
     }
     .one,
     .four p,
@@ -310,9 +365,65 @@ footer {
         font-size: 30px;
     }
     .five2 {
-        font-size: 9px;
+        font-size: 14px;
     }
     .menu {
         display: inline-block;
+    }
+    .nine figure {
+        width: 300px;
+        text-align: center;
+    }
+}
+
+@media (max-width:981px) {
+    body p {
+        font-size: 22px;
+    }
+    .h2,
+    .h3 {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+    }
+    .cap {
+        font-size: 20px;
+    }
+    figure {
+        text-align: center;
+        width: 400px;
+    }
+    .one,
+    .two {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .origin-one,
+    .origin-two {
+        display: none;
+    }
+    .alt-one,
+    .alt-two {
+        display: block;
+    }
+    .four {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: center;
+    }
+    .five {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        text-align: justify;
+    }
+    .fiveone {
+        font-size: 30px;
+    }
+    .five2 {
+        display: none;
+    }
+    .alt-five2 {
+        display: block;
     }
 }

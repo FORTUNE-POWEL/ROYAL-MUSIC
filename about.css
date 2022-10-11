@@ -78,79 +78,24 @@
         padding-left: 0%;
         padding-right: 0%;
     }
+    /*-------gallery part start----------*/
     
-    .slider-frame {
-        overflow: hidden;
-        /*height: 800px;*/
-        width: 800px;
-        margin-top: 20px;
-        margin: auto;
+    .gallery {
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
         display: flex;
-        justify-content: space-around;
-    }
-    /*-------slide animations----------*/
-    
-    @-webkit-keyframes slide_animation {
-        0% {
-            left: 0px;
-        }
-        10% {
-            left: 0px;
-        }
-        20% {
-            left: 1200px;
-        }
-        30% {
-            left: 1200px;
-        }
-        40% {
-            left: 2400px;
-        }
-        50% {
-            left: 2400px;
-        }
-        60% {
-            left: 1200px;
-        }
-        70% {
-            left: 1200px;
-        }
-        80% {
-            left: 0px;
-        }
-        90% {
-            left: 0px;
-        }
-        100% {
-            left: 0px;
-        }
     }
     
-    .slide-images {
-        /*width: 3600px;*/
-        width: 800px;
-        height: 800px;
-        margin: 0 0 0 -2400px;
-        position: relative;
-        -webkit-animation-name: slide_animation;
-        -webkit-animation-duration: 33s;
-        -webkit-animation-iteration-count: infinite;
-        -webkit-animation-direction: alternate;
-        -webkit-animation-play-state: running;
+    .gallery-item:hover {
+        border: none;
     }
     
-    .image-container {
-        height: 800px;
-        width: 900%;
-        position: relative;
-        float: left;
+    .gallery-item {
+        width: 30%;
+        margin: 0 35%;
     }
-    
-    .image-container img {
-        width: 800px;
-        margin-right: 400px;
-    }
-    /*---------end of animamtion part------------*/
+    /*---------gallery part end------------*/
     
     .g1 {
         filter: grayscale(67%);
